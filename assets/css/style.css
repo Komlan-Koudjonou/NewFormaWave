@@ -204,7 +204,7 @@ button {
   font-weight: bold;
   position: relative;
   color: #82589F;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   text-transform: uppercase;
   text-align: center;
   padding-top: 40px;
@@ -248,7 +248,8 @@ footer {
 #formapresent {
   width: 100%;
   position: relative;
-  background: url("../img/formawave-bg_copie01.png") center bottom no-repeat;
+  /* background: url("../img/formawave-bg_copie01.png") center bottom no-repeat; */
+  background: url("../img/formawave-bg02.png") center bottom no-repeat;
   background-size: cover;
   padding: 100px 0 120px 0;
 }
@@ -740,7 +741,7 @@ footer {
 }
 
 /*--------------------------------------------------------------
-# SECTION 05 NOS nos_plus FORMAWAVE
+# SECTION 05 NOS PLUS FORMAWAVE
 ----------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -758,38 +759,21 @@ footer {
 /* ====================================================================    
 #   PAGE ENTREPRISE/ECOLE   
 ======================================================================= */
-
-.entr_ecol-section {
+/* .entr_ecol-section {
   position: relative;
   z-index: 1;
   padding: 160px 0 220px;
   background-image: url("../img/entreprise:ecole/enterprise_scholl-bg.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
-}
+} */
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .entr_ecol-section {
-    padding: 180px 0 140px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .entr_ecol-section {
-    padding: 180px 0 140px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .entr_ecol-section .entr_ecol-content {
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .entr_ecol-section .entr_ecol-content {
-    margin-bottom: 50px;
-  }
+.entr_ecol-section {
+  width: 100%;
+  position: relative;
+  background: url("../img/entreprise:ecole/home-bg_enter-school.png") center bottom no-repeat;
+  background-size: cover;
+  padding: 250px 0 120px 0;
 }
 
 .entr_ecol-section .entr_ecol-content h2 {
@@ -803,96 +787,125 @@ footer {
   color: #fbb76b;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .entr_ecol-section .entr_ecol-content h1 {
-    font-size: 45px;
-  }
+.section-ee {
+  background-color: #f3f5fa;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .entr_ecol-section .entr_ecol-content h1 {
-    font-size: 37px;
-  }
+.enter-school .content {
+  padding: 60px 100px 0 100px;
 }
 
-@media (max-width: 767px) {
-  .entr_ecol-section .entr_ecol-content h1 {
-    font-size: 36px;
-  }
+.enter-school .content h3 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #82589F;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .entr_ecol-section .entr_ecol-content h1 {
-    font-size: 45px;
-  }
+.enter-school .content p {
+  font-size: 16px;
+  color: #848484;
 }
 
-.entr_ecol-section .entr_ecol-content p {
-  margin-bottom: 40px;
+.enter-school .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.enter-school .accordion-list {
+  padding: 0 100px 60px 100px;
+}
+
+.enter-school .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.enter-school .accordion-list li + li {
+  margin-top: 15px;
+}
+
+.enter-school .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.enter-school .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.enter-school .accordion-list span {
+  color: #fbb76b;
+  font-weight: 600;
   font-size: 18px;
-  line-height: 28px;
+  padding-right: 10px;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .entr_ecol-section .hero-img img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .entr_ecol-section .hero-img img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .entr_ecol-section .hero-img img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .entr_ecol-section .hero-img img {
-    width: 100%;
-  }
-}
-
-.entr_ecol-section .hero-shape .shape {
+.enter-school .accordion-list i {
+  font-size: 24px;
   position: absolute;
-  z-index: -1;
+  right: 0;
+  top: 0;
 }
 
-.entr_ecol-section .hero-shape .shape.shape-1 {
-  top: -285px;
-  right: -300px;
+.enter-school .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .entr_ecol-section .hero-shape .shape.shape-1 {
-    top: -420px;
-    right: -550px;
+.enter-school .accordion-list .icon-show {
+  display: none;
+}
+
+.enter-school .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.enter-school .accordion-list a.collapsed:hover {
+  color: #82589F;
+}
+
+.enter-school .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.enter-school .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .enter-school .content, .enter-school .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .entr_ecol-section .hero-shape .shape.shape-1 {
-    top: -400px;
-    right: -550px;
+@media (max-width: 992px) {
+  .enter-school .img {
+    min-height: 400px;
+  }
+  .enter-school .content {
+    padding-top: 30px;
+  }
+  .enter-school .accordion-list {
+    padding-bottom: 30px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .entr_ecol-section .hero-shape .shape.shape-1 {
-    display: none;
+@media (max-width: 575px) {
+  .enter-school .img {
+    min-height: 200px;
   }
 }
-
-@media (max-width: 767px) {
-  .entr_ecol-section .hero-shape .shape.shape-1 {
-    display: none;
-  }
-}
-
 /* ====================================================================    
 #   PAGE FORMATEUR  
 ======================================================================= */
@@ -901,7 +914,7 @@ footer {
   position: relative;
   z-index: 1;
   padding: 100px 0 100px;
-  background-image: url("../img/formateur/formateur-bg.png");
+  background-image: url("../img/formateur/formateur1-bg.png");
   background-position: bottom center;
   background-repeat: no-repeat;
 }
@@ -1024,14 +1037,6 @@ footer {
 /* ====================================================================    
 #   PAGE CONSULTANT / COLLABORATEUR 
 ======================================================================= */
-
-/* #consul_collab {
-  width: 100%;
-  position: relative;
-  background: url("../img/consultant:collaborateur/home-background_Formawave.png") center bottom no-repeat;
-  background-size: cover;
-  padding: 100px 0 120px 0;
-} */
 #consul_collab {
   width: 100%;
   position: relative;
@@ -1170,7 +1175,7 @@ footer {
   padding: 30px 15px;
   text-align: center;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
-  background: #eee;
+  background: rgb(255, 255, 255);
   margin: -50px 20px 0 20px;
   position: relative;
   border-radius: 8px;
