@@ -240,6 +240,57 @@ footer {
   background-color: #82589F;
 }
 
+/*--------------------------------------------------------------
+# FORMAWAVE TEMPLATE
+--------------------------------------------------------------*/
+#main {
+  margin-top: 72px;
+}
+
+.template {
+  padding: 15px 0;
+  background-color: #fef5f1;
+  min-height: 40px;
+}
+
+.template h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.template ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.template ol li+li {
+  padding-left: 10px;
+}
+
+.template ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .template .d-flex {
+    display: block !important;
+  }
+
+  .template ol {
+    display: block;
+  }
+
+  .template ol li {
+    display: inline-block;
+  }
+}
 
 /*--------------------------------------------------------------
 # SECTION 01 PRÉSENTATION FORMAWAVE
@@ -448,6 +499,10 @@ footer {
   margin-left: 80px;
   background-color: #fbb76b;
   border: none;
+}
+
+.descriptionF:hover {
+  background-color: #894da7;
 }
 
 /*----------------------------------------------------
@@ -886,6 +941,30 @@ footer {
   margin-top: -70px;
 }
 
+/* ====================== FORMULAIRE ENTREPRISE - ECOLE ====================== */
+.formulaire .form-school {
+  width: 100%;
+  border-top: 3px solid #fbb76b;
+  border-bottom: 3px solid #fbb76b;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.formulaire .form-school .form-group {
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.formulaire .form-school input,
+.formulaire .form-school textarea,
+.formulaire .form-school select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+
 /* ====================================================================    
 #   PAGE FORMATEUR  
 ======================================================================= */
@@ -943,23 +1022,11 @@ footer {
   transform: scale(1.08);
 }
 
-.etapes .icon {
-  margin-bottom: 15px;
-}
-
 .etapes .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
-}
-
-.etapes .title a {
   color: #fbb76b;
-  transition: 0.3s;
-}
-
-.etapes .title a:hover {
-  color: #82589F;
 }
 
 .etapes .description {
@@ -976,9 +1043,6 @@ footer {
   background: white;
   width: 300px;
   height: 100%;
-  /* height: 300px;
-  border-radius: 50%;
-  text-align: center; */
 }
 
 .plus .service-item h4 {
@@ -993,11 +1057,6 @@ footer {
   transition: 0.3s;
 }
 
-.plus .service-item h4 a {
-  color: var(--color-secondary);
-  transition: ease-in-out 0.3s;
-}
-
 .plus .service-item p {
   line-height: 24px;
   font-size: 14px;
@@ -1008,11 +1067,6 @@ footer {
   transform: translateY(-10px);
   box-shadow: 0px 0 60px 0 rgba(0, 0, 0, 0.1);
 }
-
-.plus .service-item:hover h4 a {
-  color: #fbb76b;
-}
-
 
 /* ====================================================================    
 #   PAGE CONSULTANT / COLLABORATEUR 
@@ -1242,7 +1296,7 @@ footer {
   padding-top: 5px;
 }
 
-.contact .php-email-form {
+.contact .formulair-email {
   width: 100%;
   border-top: 3px solid #fbb76b;
   border-bottom: 3px solid #fbb76b;
@@ -1251,26 +1305,26 @@ footer {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .php-email-form .form-group {
+.contact .formulair-email .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .formulair-email input,
+.contact .formulair-email textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.contact .formulair-email input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .formulair-email textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .formulair-email button[type=submit] {
   background: #fbb76b;
   border: 0;
   padding: 10px 24px;
@@ -1279,6 +1333,6 @@ footer {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .formulair-email button[type=submit]:hover {
   background: #82589F;
 }
